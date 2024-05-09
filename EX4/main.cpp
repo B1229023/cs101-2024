@@ -11,7 +11,7 @@ class FuelTank{
             m_gas_grade = Gas;
         }
         int fuel_up(int v, int gas){
-            if (v > m_FuelTankCapacity||gas != m_gas_grade){
+            if (v > m_FuelTankCapacity&&gas != m_gas_grade){
                cout << "Error: Fueltank capacity: " << m_FuelTankCapacity << " but fuel up: " << v << endl;
                cout << "Error: Gas grade: " << gas << " Correct Gas grade: " << m_gas_grade << endl;
             }
