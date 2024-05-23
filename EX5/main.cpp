@@ -26,7 +26,7 @@ class ReadClass{
             while(file.get(c)){
                 if(m == 1){
                     if (c=='{'){
-                        m==0;
+                        m=0;
                     }else if (c != '"'){
                         Classname[Class_num-1]+=c;
                     }else{
